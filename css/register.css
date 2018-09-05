@@ -1,0 +1,241 @@
+*{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #6C6C6C;
+}
+
+/*头部*/
+header{
+	width: 100%;
+	height: 34px;
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #EEEEEE;
+}
+header .h_main_div{
+	width:88%;
+	margin: 0 auto;
+	font-size: 12px;
+	position: relative;
+}
+header .h_main_div p{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	line-height: 34px;
+}
+header .h_main_div p span:nth-child(1) a{
+	color: red;
+}
+header .h_main_div p span:nth-child(2){
+	margin-right: 20px;
+}
+header .h_main_div .p_a:hover{
+	color: red;
+}
+header .h_main_div .h_main_ul{
+	width: 660px;
+	height: 34px;
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	right:0px;
+	color: #9C9C9C;
+}
+header .h_main_div .h_main_ul>li:nth-child(1){
+	color: red;
+}
+header .h_main_div .h_main_ul>li{
+	float: left;
+	width:12%;
+}
+header .h_main_div .h_main_ul>li>span{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+}
+header .h_main_div .h_main_ul>li>span>img{
+	margin-right: 5px;
+}
+.active_span{
+	background:#ffffff;
+	border-left:1px solid #EEEEEE;
+	border-right:1px solid #EEEEEE;
+}
+header .h_main_div .h_main_ul>li>.show_div{
+	background-color: #FFFFFF;
+	border-left:1px solid #EEEEEE;
+	border-right:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+	padding-top: 10px;
+	width: 80px;
+	display: none;
+}
+header .h_main_div .h_main_ul>li>.show_div li{
+	height: 30px;
+	line-height: 30px; 
+}
+header #nav_style{ 
+	width: 1150px;
+	height: 280px;
+	position: relative;
+	left: -1077px;
+}
+header #nav_style ul{
+	float: left;
+	width: 285px;
+	color:#000;
+}
+header #nav_style ul:not(:last-child){
+	border-right: 1px solid #F5F5F5;
+}
+header #nav_style ul li{
+	display: flex;
+	margin-left: 20px;
+}
+header #nav_style ul li span{
+	flex:1;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin:5%;
+	border-radius: 5px;
+	text-align: center;
+}
+header #nav_style ul li.zhu{
+	color:#F01205;
+	font-size: 15px;
+	font-weight: bold;
+}
+header #nav_style ul li.te{
+	color: #B0E24B;
+	font-size: 15px;
+	font-weight: bold;
+}
+header #nav_style ul li.dang{
+	color: #C17CBC;
+	font-size: 15px;
+	font-weight: bold;
+}
+header #nav_style ul li.geng{
+	color: #2177C7;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/*中间区域*/
+section{
+	height: 460px;
+
+}
+section .zhuce{
+	width:88%;
+	height:85px;
+	line-height: 85px;
+	margin:0 auto;
+	font-size: 22px;
+	font-weight: 400;
+}
+section .zhuce img{
+	position: relative;
+	top:10px;
+}
+section .zhuce_cnt{
+	width:88%;
+	height: 300px;
+	margin:0 auto;
+}
+section .zhuce_cnt a{
+	color:#E3431A;
+	padding-left:200px;
+}
+
+
+/*底部区域*/
+footer{
+	height: 170px;
+	padding-top: 60px;
+	font-size: 12px;
+	color:#6C6C6C;
+}
+footer p{
+	width:88%;
+	margin:0 auto;
+}
+footer p:nth-child(1){
+	height:42px;
+	line-height: 42px;
+	border-top: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+}
+footer p:nth-child(2){
+	height: 35px;
+	line-height: 35px;
+}
+footer p:nth-child(2) span.ban_quan{
+	color:#9C9C9C;
+	margin-left: 32px;
+}
+footer p:nth-child(3){
+	color:#9C9C9C;
+}
+footer p:nth-child(4){
+	height: 66px;
+	padding-top: 12px;
+}
+
+/*遮罩层  注册内容*/
+#zhao{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	opacity: 0.5;
+	z-index: 1;
+	display:none;
+}
+#zhao .register_content{
+	background-color: #ffffff;
+	width: 360px;
+	height: 300px;
+	margin:0 auto;
+	position: absolute;
+	z-index: 2;
+	left: 500px;
+	top: 200px;
+	display: none;
+}
+#zhao .register_content div{
+	width:300px;
+	margin:0 auto;
+	margin-top:25px;
+}
+#zhao .register_content input{
+	width:300px;
+	height: 40px;
+}
+#zhao .register_content input[type='button']{
+	background-color: #3F89EC;
+	border: 0;
+	color: #FFFFFF;
+}
+#zhao .register_content .close_zhuce{
+	width:50px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 24px;
+	position: absolute;
+	right: 0px;
+	top:-28px;
+}
+#zhao .register_content .tishi{
+	height:15px;
+	font-size: 12px;
+	color: red;
+	position: relative;
+	z-index: 1;
+}
